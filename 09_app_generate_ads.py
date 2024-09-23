@@ -16,7 +16,7 @@ def askGpt(prompt,apikey):
 
 ##### 메인 함수 #####
 def main():
-    st.set_page_config(page_title="요약 프로그램")
+    st.set_page_config(page_title="광고 문구 생성 프로그램")
 
     # 사이드바
     with st.sidebar:
@@ -41,7 +41,6 @@ def main():
     if st.button("광고 문구 생성"):
         prompt = f'''
         아래 내용을 참고해서 1~2줄짜리 광구문구 5개 작성해줘
-        - World of warcraft의 영웅 이름을 사용해줘
         - 제품명: {name}
         - 브렌드 명: {com_name}
         - 브렌드 핵심 가치: {value}
